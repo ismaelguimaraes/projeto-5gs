@@ -122,6 +122,7 @@ export const Requisitos = styled.div`
         }
 
         button {
+            cursor: auto;
             z-index: 2;
             display: flex;
             flex-direction: column;
@@ -149,9 +150,9 @@ export const Conteudo = styled.div`
 
     position: relative;
     top: -10px;
-    padding: ${props => props.active ? "0px 18px 0px 15px" : "25px 18px 20px 15px"};
+    padding: 25px 18px 20px 15px;
 
-    height: ${props => props.active ? "0px" : "140px"};
+    height: 140px;
     width: 200px;
 
     z-index: 1;
@@ -159,12 +160,8 @@ export const Conteudo = styled.div`
     background: #2bbe60;
     border-radius: 5px;
 
-    transition: height .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-
     color: #111;
     letter-spacing: 1px;
     font-size: 1rem;
     text-align: center;
-
-    overflow: hidden;
 `;
