@@ -8,7 +8,7 @@ export const Hero = styled.div`
     flex-direction: row;
     background: #222;
     color: #fff;
-    padding-left: 60px;
+    padding-left: 105px;
 
     width: 100vw;
     height: 100vh;
@@ -34,30 +34,16 @@ export const Hero = styled.div`
             text-transform: uppercase;
             letter-spacing: 4px;
             font-weight: 300;
-            font-size: 5rem;
+            font-size: 4.95rem;
             text-align: start;
-            padding-left: 50px;
         }
 
         p {
             font-size: 1.5rem;
             letter-spacing: 1.5px;
             text-align: start;
-            padding-left: 50px;
-            width: 530px;
+            width: 480px;
         }
-    }
-
-    @media(max-width:600px){
-    h1 {
-        font-size: 2rem;
-        padding: 10px;
-    }
-
-    p {
-        font-size: 1rem;
-        padding: 0px 20px;
-        padding: 0px 50px;
     }
 }
 
