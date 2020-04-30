@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Comparação, Requisitos, Conteudo} from './styles';
+import { Comparacao, Requisitos, Conteudo} from './styles';
 import {FaTachometerAlt, FaStopwatch, FaMobileAlt, FaBroadcastTower, FaBatteryHalf} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -39,7 +39,7 @@ export default function ComparativoGrande(){
     }
 
     return (
-        <Comparação>
+        <Comparacao>
             <h2>Comparação</h2>
             <h3>(4G e 5G)</h3>
 
@@ -55,7 +55,7 @@ export default function ComparativoGrande(){
             </Requisitos>
 
             <Link to="/"></Link>
-        </Comparação>
+        </Comparacao>
 
     );
 }

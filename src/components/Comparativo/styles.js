@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
-export const Comparação = styled.div`
+export const Comparacao = styled.div`
     background: #fff;
     color: #333;
     padding: 80px 220px;
