@@ -6,18 +6,13 @@ import {Hero, Video, Conteudo, Footer, RedesSociais, Info} from './styles';
 
 import Comparativo from '../../components/Comparativo';
 
-import hero from '../../assets/imagens/backgroundDegrade.png';
-
 export default function Main(){
 
     return(
         <>
             <Hero>
-                <div>
-                    <h1>5G Sustentável</h1>
-                    <p>O futuro da telecomunicação móvel e da Sustentabilidade!</p>
-                </div>
-                <img src={hero} alt="hero"/>
+                <h1>5G Sustentável</h1>
+                <p>O futuro da telecomunicação móvel e da Sustentabilidade!</p>
             </Hero>
 
             <Comparativo/>

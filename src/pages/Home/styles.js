@@ -2,52 +2,43 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 import bg2 from '../../assets/imagens/background2.png';
+import hero from '../../assets/imagens/backgroundDegrade.png';
 
 export const Hero = styled.div`
     display: flex;
-    flex-direction: row;
-    background: #222;
+    flex-direction: column;
+
+    background: #222 url(${hero}) right no-repeat;
+    background-size: contain;
+
     color: #fff;
     padding-left: 105px;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-top: 40px;
 
     width: 100vw;
     height: 100vh;
 
-    img {
-        max-height: 100vh;
-        max-width: max-content;
-        position: relative;
-        margin-left: auto;
-        overflow: hidden;
 
-        box-sizing: border-box;
+    h1 {
+        font-family: Bebas neue;
+        color: #10e660;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 300;
+        font-size: 4.5rem;
+        text-align: start;
     }
 
-    div {
-        align-self: center;
-        justify-self: center;
-        padding-top: 40px;
-
-        h1 {
-            font-family: Bebas neue;
-            color: #10e660;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-weight: 300;
-            font-size: 4.95rem;
-            text-align: start;
-        }
-
-        p {
-            font-size: 1.5rem;
-            letter-spacing: 1.5px;
-            text-align: start;
-            width: 480px;
-        }
+    p {
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+        text-align: start;
+        width: 480px;
     }
-}
-
-
 `;
 
 export const Video = styled.div`
