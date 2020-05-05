@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {FaFacebook, FaCaretUp} from 'react-icons/fa';
-import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
-import {Hero, Video, Conteudo, Footer, RedesSociais, Info} from './styles';
+import { AiFillInstagram, AiFillTwitterCircle, AiFillPlayCircle } from 'react-icons/ai';
+import {Hero, Video, Conteudo, Footer, RedesSociais, Info, VideoGrid} from './styles';
 
 import Comparativo from '../../components/Comparativo';
+
+import tumb from '../../assets/imagens/Tumbnail1.png'
 
 export default function Main(){
 
@@ -19,6 +21,11 @@ export default function Main(){
 
             <Video>
                 <h2>Vídeos</h2>
+                <VideoGrid>
+                    <p><img src={tumb} alt=""/><AiFillPlayCircle size={66}/></p>
+                    <p><AiFillPlayCircle size={66} color="#fff"/></p>
+                    <p><AiFillPlayCircle size={66} color="#fff"/></p>
+                </VideoGrid>
             </Video>
 
 

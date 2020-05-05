@@ -42,14 +42,13 @@ export const Hero = styled.div`
 `;
 
 export const Video = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100vw;
+    height: 90vh;
+
     padding: 50px 150px;
     background: #222 url(${bg2}) left no-repeat;
     background-size: contain;
     color: #10e660;
-    height: 90vh;
 
     h2 {
         text-align: center;
@@ -60,6 +59,42 @@ export const Video = styled.div`
         margin-bottom: 30px;
     }
 
+`;
+
+export const VideoGrid = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+    p {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+
+        background: #333;
+
+        svg {
+            grid-column: 1;
+            grid-row: 1;
+            z-index: 2;
+            color: #fff;
+        }
+
+        img {
+            grid-column: 1;
+            grid-row: 1;
+            filter: brightness(60%);
+
+            min-width: 355px;
+        }
+
+        margin: 10px;
+    }
 `;
 
 export const Conteudo = styled.div`
@@ -202,5 +237,6 @@ export const RedesSociais = styled.div`
         padding: 0 7px;
     }
 `;
+
 
 

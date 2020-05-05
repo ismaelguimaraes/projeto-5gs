@@ -4,7 +4,7 @@ import { darken } from 'polished';
 export const Comparacao = styled.div`
     background: #fff;
     color: #333;
-    padding: 80px 220px;
+    padding: 50px 220px;
     max-width: 100vw;
     box-sizing: border-box;
 
