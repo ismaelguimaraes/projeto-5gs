@@ -6,7 +6,7 @@ import {Hero, Video, Conteudo, Footer, RedesSociais, Info, VideoGrid} from './st
 
 import Comparativo from '../../components/Comparativo';
 
-import tumb from '../../assets/imagens/Tumbnail1.png'
+import tumb from '../../assets/imagens/Tumbnail.png'
 
 export default function Main(){
 
@@ -22,9 +22,9 @@ export default function Main(){
             <Video>
                 <h2>Vídeos</h2>
                 <VideoGrid>
-                    <p><img src={tumb} alt=""/><AiFillPlayCircle size={66}/></p>
-                    <p><AiFillPlayCircle size={66} color="#fff"/></p>
-                    <p><AiFillPlayCircle size={66} color="#fff"/></p>
+                    <p><img src={tumb} alt=""/><AiFillPlayCircle size={65}/></p>
+                    <p><img src={tumb} alt=""/><AiFillPlayCircle size={65} color="#fff"/></p>
+                    <p><img src={tumb} alt=""/><AiFillPlayCircle size={65} color="#fff"/></p>
                 </VideoGrid>
             </Video>
 

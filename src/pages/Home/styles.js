@@ -22,7 +22,6 @@ export const Hero = styled.div`
     width: 100vw;
     height: 100vh;
 
-
     h1 {
         font-family: Bebas neue;
         color: #10e660;
@@ -45,7 +44,7 @@ export const Video = styled.div`
     width: 100vw;
     height: 90vh;
 
-    padding: 50px 150px;
+    padding: 50px 0px;
     background: #222 url(${bg2}) left no-repeat;
     background-size: contain;
     color: #10e660;
@@ -58,7 +57,6 @@ export const Video = styled.div`
         letter-spacing: 3px;
         margin-bottom: 30px;
     }
-
 `;
 
 export const VideoGrid = styled.div`
@@ -66,15 +64,15 @@ export const VideoGrid = styled.div`
     justify-content: center;
     align-items: center;
     padding-top: 30px;
+    overflow: hidden;
 
     p {
         display: grid;
         align-items: center;
         justify-content: center;
         justify-items: center;
-        width: 300px;
+        min-width: 300px;
         height: 200px;
-        overflow: hidden;
 
         background: #333;
 
@@ -89,8 +87,7 @@ export const VideoGrid = styled.div`
             grid-column: 1;
             grid-row: 1;
             filter: brightness(60%);
-
-            min-width: 355px;
+            height: 200px;
         }
 
         margin: 10px;
