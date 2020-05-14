@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 import bg2 from '../../assets/imagens/background2.png';
-import hero from '../../assets/imagens/backgroundDegrade.png';
+import hero from '../../assets/imagens/background.png';
 
 export const Hero = styled.div`
     display: flex;
