@@ -30,19 +30,25 @@ export const Hero = styled.div`
         font-weight: 300;
         font-size: 4.5rem;
         text-align: start;
+        width: 430px;
+        background: #222;
     }
 
     p {
         font-size: 1.25rem;
         letter-spacing: 1.5px;
         text-align: start;
-        width: 480px;
+        width: 430px;
+        background: #222;
     }
 `;
 
 export const Video = styled.div`
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 90vh;
+    min-height: 90vh;
+    align-items: center;
 
     padding: 50px 0px;
     background: #222 url(${bg2}) left no-repeat;
@@ -56,6 +62,8 @@ export const Video = styled.div`
         font-family: Bebas neue;
         letter-spacing: 3px;
         margin-bottom: 30px;
+        background: #222;
+        padding: 10px 20px;
     }
 `;
 

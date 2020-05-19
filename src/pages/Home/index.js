@@ -39,7 +39,7 @@ export default function Main(){
 
                 <p>O 5G representa uma oportunidade para repensar a organização da sociedade, a fim de apoiar abordagens sustentaveis para a vida.</p>
 
-                <Link to="/"></Link>
+                <Link to="/informacoes"></Link>
             </Conteudo>
 
             <Footer>

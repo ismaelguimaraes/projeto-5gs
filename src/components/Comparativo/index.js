@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Comparacao, Requisitos, Conteudo} from './styles';
+import {Link} from 'react-router-dom';
 import {FaTachometerAlt, FaStopwatch, FaMobileAlt, FaBatteryHalf} from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 export default function ComparativoGrande(){
     return (

@@ -4,12 +4,13 @@ import { darken } from 'polished';
 export const Comparacao = styled.div`
     background: #fff;
     color: #333;
-    padding: 50px 220px;
+    padding: 50px 0px;
     max-width: 100vw;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     justify-content: space-between;
 
@@ -48,21 +49,21 @@ export const Comparacao = styled.div`
         padding: 10px 30px;
         align-self: center;
 
-        margin-top: 40px;
+            margin-top: 40px;
 
-        border-radius: 4px;
-        background-color: #333;
-        color: #fff;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
 
-        &::after{
-            content: "Ler mais+";
+            &::after{
+                content: "Ler mais+";
+            }
+
+            &:hover {
+                transition: background 0.2s ease-in-out;
+                background: ${darken(0.1, '#1eee70')};
+            }
         }
-
-        &:hover {
-            transition: background 0.2s ease-in-out;
-            background: ${darken(0.1, '#1eee70')};
-        }
-    }
 
 `;
 
