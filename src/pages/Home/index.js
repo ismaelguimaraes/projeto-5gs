@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {FaFacebook, FaCaretUp} from 'react-icons/fa';
-import { AiFillInstagram, AiFillTwitterCircle, AiFillPlayCircle } from 'react-icons/ai';
-import {Hero, Video, Conteudo, Footer, RedesSociais, Info, VideoGrid} from './styles';
+import { AiFillPlayCircle } from 'react-icons/ai';
+import {Hero, Video, Conteudo, VideoGrid} from './styles';
 
 import Comparativo from '../../components/Comparativo';
 
@@ -42,24 +41,6 @@ export default function Main(){
 
                 <Link to="/informacoes"></Link>
             </Conteudo>
-
-            <Footer>
-                <Info>
-                    <a href="#">Fale Conosco</a>
-                    <p>\</p>
-                    <a href="#">Sobre nós</a>
-                    <p>\</p>
-                    <a href="#">Legal</a>
-                </Info>
-
-                <a href=""><FaCaretUp size={25}/></a>
-
-                <RedesSociais>
-                    <a href="https:\\facebook.com"><FaFacebook size={25}/></a>
-                    <a href="instagram.com" ><AiFillInstagram size={27}/></a>
-                    <a href="instagram.com"><AiFillTwitterCircle size={27}/></a>
-                </RedesSociais>
-            </Footer>
 
         </>
     );

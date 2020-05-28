@@ -26,24 +26,6 @@ export default function TS() {
                     </p>
                 </section>
             </Container>
-
-            <Footer>
-                <Info>
-                    <a href="#">Fale Conosco</a>
-                    <p>\</p>
-                    <a href="#">Sobre nós</a>
-                    <p>\</p>
-                    <a href="#">Legal</a>
-                </Info>
-
-                <a href=""><FaCaretUp size={25}/></a>
-
-                <RedesSociais>
-                    <a href="https:\\facebook.com"><FaFacebook size={25}/></a>
-                    <a href="instagram.com" ><AiFillInstagram size={27}/></a>
-                    <a href="instagram.com"><AiFillTwitterCircle size={27}/></a>
-                </RedesSociais>
-            </Footer>
         </>
     );
 }
