@@ -12,17 +12,17 @@ export default function ComparativoGrande(){
             <Requisitos>
                 <div>
                     <button><FaTachometerAlt size={35}/></button>
-                    <Conteudo><p>O 5G será até 100 vezes mais rápido que o 4G.</p></Conteudo>
+                    <Conteudo><p>O 5G será até 50 vezes mais rápido que o 4G.</p></Conteudo>
                 </div>
 
                 <div>
                     <button><FaStopwatch size={35}/></button>
-                    <Conteudo><p>As redes 5G possuirão a latência em cerca de 70 vezes menor que o 4G.</p></Conteudo>
+                    <Conteudo><p>As redes 5G possuirão a latência em cerca de 5 vezes menor que o 4G.</p></Conteudo>
                 </div>
 
                 <div>
                     <button><FaMobileAlt size={35}/></button>
-                    <Conteudo><p>O 5G suporta 100 vezes mais de dispositivos conectados por km² que o 4G.</p></Conteudo>
+                    <Conteudo><p>O 5G suporta 1000 vezes mais de dispositivos conectados por km² que o 4G.</p></Conteudo>
                 </div>
 
                 <div>

@@ -50,16 +50,30 @@ export const Card = styled.div`
         box-shadow: inset 8px 0px 20px -20px black;
 
         h4 {
-        font-size: 2rem;
-        font-weight: 100;
-        font-family: Bebas neue;
-        letter-spacing: 1px;
+            font-size: 2rem;
+            font-weight: 100;
+            font-family: Bebas neue;
+            letter-spacing: 1px;
+            padding-bottom: 5px;
         }
 
         p {
             font-size: 1rem;
             font-family: Roboto;
             letter-spacing: 1px;
+            padding-bottom: 10px;
+        }
+
+        span {
+            font-size: 0.8rem;
+            font-family: Roboto;
+            letter-spacing: 1px;
+
+            a {
+                &:hover {
+                    text-decoration: underline #000;
+                }
+            }
         }
     }
 `;
