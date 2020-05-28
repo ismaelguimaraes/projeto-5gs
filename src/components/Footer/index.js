@@ -18,7 +18,7 @@ export default function FooterPage() {
 
                 <RedesSociais>
                     <a href="https:\\facebook.com"><FaFacebook size={25}/></a>
-                    <a href="instagram.com" ><AiFillInstagram size={27}/></a>
+                    <a href="https://www.instagram.com/5g_sustentavel/" target="_blank" ><AiFillInstagram size={27}/></a>
                     <a href="instagram.com"><AiFillTwitterCircle size={27}/></a>
                 </RedesSociais>
             </Footer>

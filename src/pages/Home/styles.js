@@ -4,6 +4,9 @@ import { darken } from 'polished';
 import bg2 from '../../assets/imagens/background2.png';
 import hero from '../../assets/imagens/background.png';
 
+import thumb from '../../assets/imagens/thumbnail.png';
+import thumb2 from '../../assets/imagens/thumbnail2.png';
+
 export const Hero = styled.div`
     display: flex;
     flex-direction: column;
@@ -89,11 +92,12 @@ export const VideoGrid = styled.div`
             color: #fff;
         }
 
-        img {
+        article {
             grid-column: 1;
             grid-row: 1;
             filter: brightness(60%);
             height: 200px;
+            width: 330px;
         }
 
         p {
@@ -103,6 +107,43 @@ export const VideoGrid = styled.div`
             font-size: 1rem;
             letter-spacing: 1px;
             margin-top: 7px;
+        }
+
+        &:nth-child(1) {
+            article {
+                background: url(${thumb}) center no-repeat;
+                background-size: contain;
+            }
+
+            p {
+                &::after {
+                    content: "5GS - Sustentabilidade";
+                }
+            }
+        }
+        &:nth-child(2) {
+            article {
+                background: url(${thumb2}) center no-repeat;
+                background-size: contain;
+            }
+
+            p {
+                &::after {
+                    content: "5GS - O que fizemos até agora";
+                }
+            }
+        }
+        &:nth-child(3) {
+            article {
+                background: url(${thumb}) center no-repeat;
+                background-size: contain;
+            }
+
+            p {
+                &::after {
+                    content: "5GS - Sem nome";
+                }
+            }
         }
     }
 `;
@@ -133,7 +174,6 @@ export const Conteudo = styled.div`
         }
 
         p{
-
             text-align: center;
             font-size: 1.2rem;
             line-height: 30px;

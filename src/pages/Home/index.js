@@ -5,9 +5,6 @@ import {Hero, Video, Conteudo, VideoGrid} from './styles';
 
 import Comparativo from '../../components/Comparativo';
 
-import thumb from '../../assets/imagens/thumbnail.png'
-import thumb2 from '../../assets/imagens/thumbnail2.png'
-
 export default function Main(){
 
     return(
@@ -22,9 +19,9 @@ export default function Main(){
             <Video>
                 <h2>Vídeos</h2>
                 <VideoGrid>
-                    <section><img src={thumb} alt=""/><AiFillPlayCircle size={65}/><p>5GS - Sustentabilidade</p></section>
-                    <section><img src={thumb2} alt=""/><AiFillPlayCircle size={65} color="#fff"/><p>5GS - Oque fizemos até agora</p></section>
-                    <section><img src={thumb} alt=""/><AiFillPlayCircle size={65} color="#fff"/><p>5GS - Sem nome</p></section>
+                    <section><article></article><AiFillPlayCircle size={65}/><p></p></section>
+                    <section><article></article><AiFillPlayCircle size={65} color="#fff"/><p></p></section>
+                    <section><article></article><AiFillPlayCircle size={65} color="#fff"/><p></p></section>
                 </VideoGrid>
             </Video>
 
