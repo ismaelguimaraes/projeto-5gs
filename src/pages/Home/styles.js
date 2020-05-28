@@ -72,17 +72,15 @@ export const VideoGrid = styled.div`
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    overflow: hidden;
 
-    p {
+    section {
         display: grid;
         align-items: center;
         justify-content: center;
         justify-items: center;
-        min-width: 300px;
-        height: 200px;
-
-        background: #333;
+        width: 355px;
+        height: 220px;
+        margin: 0 10px 20px 10px;
 
         svg {
             grid-column: 1;
@@ -98,7 +96,14 @@ export const VideoGrid = styled.div`
             height: 200px;
         }
 
-        margin: 10px;
+        p {
+            justify-self: self-start;
+            align-self: flex-start;
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            margin-top: 7px;
+        }
     }
 `;
 
@@ -194,7 +199,7 @@ export const Footer = styled.footer`
 
     svg {
             &:hover {
-            color: #97FF83;
+            color: #1eee70;
             }
         }
 
@@ -220,7 +225,7 @@ export const Footer = styled.footer`
         transition: background cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
 
         &:hover {
-            color: #97FF83;
+            color: #1eee70;
         }
     }
 

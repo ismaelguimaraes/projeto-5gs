@@ -128,7 +128,7 @@ export const Requisitos = styled.div`
             display: flex;
             flex-direction: column;
             text-transform: uppercase;
-            background: #1eee70;
+            background: #10E660;
             color: #000;
             font-size: 1rem;
 
@@ -158,7 +158,7 @@ export const Conteudo = styled.div`
 
     z-index: 1;
 
-    background: #2bbe60;
+    background: #10B74E;
     border-radius: 5px;
 
     color: #111;

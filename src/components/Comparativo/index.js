@@ -31,7 +31,7 @@ export default function ComparativoGrande(){
                 </div>
             </Requisitos>
 
-            <Link to="/"></Link>
+            <Link to="/comparacao"></Link>
         </Comparacao>
 
     );

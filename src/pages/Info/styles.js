@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: grid;
     justify-content: center;
-    justify-content: center;
     padding: 130px 0;
 
     section {
