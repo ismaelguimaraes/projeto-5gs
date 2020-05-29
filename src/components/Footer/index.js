@@ -14,7 +14,7 @@ export default function FooterPage() {
                     <a href="#">Legal</a>
                 </Info>
 
-                <a href="/"><FaCaretUp size={25}/></a>
+                <a href="#"><FaCaretUp size={25}/></a>
 
                 <RedesSociais>
                     <a href="https:\\facebook.com" target="_blank"><FaFacebook size={25}/></a>
