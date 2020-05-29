@@ -9,7 +9,7 @@ export default function TS() {
         <>
             <Container>
                 <section>
-                    <h2>Tecnologia 5G e Sustentabilidade</h2>
+                    <h1>Tecnologia 5G e Sustentabilidade</h1>
                     <img src={InfoImg} alt="Imagem ilustrativa 5GS"/>
 
                     <p>

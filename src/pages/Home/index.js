@@ -25,10 +25,8 @@ export default function Main(){
                 </VideoGrid>
             </Video>
 
-
-
             <Conteudo>
-                <h3>A Tecnologia 5G e a sustentabilidade</h3>
+                <h2>A Tecnologia 5G e a sustentabilidade</h2>
                 <hr></hr>
                 <p>O 5G é a próxima geração de rede de dados sem fio e será capaz de fornecer 100 vezes mais velocidade de internet do que o 4G.  De fato, o 5G trará  novas formas de serviços, incluindo tudo, desde monitorar remotamente o uso da  agua nas fazendas até  realizar remotamente cirurgias cerebrais, Devido a sua baixíssima latência.</p>
 

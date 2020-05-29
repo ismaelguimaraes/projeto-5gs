@@ -11,10 +11,10 @@ export const Container = styled.div`
         flex-direction: column;
     }
 
-    h2 {
+    h1 {
         font-family: Bebas neue;
-        font-weight: 50;
-        letter-spacing: 2px;
+        font-weight: 100;
+        letter-spacing: 0.125rem;
         font-size: 2.7rem;
         margin-bottom: 20px;
     }
@@ -27,7 +27,7 @@ export const Container = styled.div`
         margin-bottom: 40px;
         font-family: roboto;
         font-size: 1.2rem;
-        line-height: 30px;
+        line-height: 1.875rem;
     }
 
     ul {

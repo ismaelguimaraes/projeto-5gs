@@ -7,21 +7,21 @@ export const Container = styled.div`
     padding: 130px 0;
     text-align: center;
 
-    h2 {
+    h1 {
         font-family: Bebas neue;
         font-size: 3rem;
         font-weight: 100;
         font-family: Bebas neue;
-        letter-spacing: 3px;
+        letter-spacing: 0.188rem;
 
     }
 
-    h3 {
+    h2 {
         font-family: Bebas neue;
         font-size: 1.5rem;
         font-weight: 100;
         font-family: Bebas neue;
-        letter-spacing: 1px;
+        letter-spacing: 0.063rem;
     }
 
 `;
@@ -33,7 +33,7 @@ export const Card = styled.div`
     background: #1eee70;
 
     div {
-        min-width: 150px;
+        min-width: 9.375rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -43,13 +43,13 @@ export const Card = styled.div`
         display: grid;
         align-items: flex-start;
         padding: 20px 30px;
-        max-width: 900px;
+        max-width: 56.25rem;
         text-align: start;
         grid-gap: 10px;
         background: #0DC954;
         box-shadow: inset 8px 0px 20px -20px black;
 
-        h4 {
+        h3 {
             font-size: 2rem;
             font-weight: 100;
             font-family: Bebas neue;

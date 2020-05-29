@@ -29,19 +29,19 @@ export const Hero = styled.div`
         font-family: Bebas neue;
         color: #10e660;
         text-transform: uppercase;
-        letter-spacing: 4px;
+        letter-spacing: 0.25rem;
         font-weight: 300;
         font-size: 4.5rem;
         text-align: start;
-        width: 430px;
+        width: 26.875rem;
         background: #222;
     }
 
     p {
         font-size: 1.25rem;
-        letter-spacing: 1.5px;
+        letter-spacing: 0.094rem;
         text-align: start;
-        width: 430px;
+        width: 26.875rem;
         background: #222;
     }
 `;
@@ -81,8 +81,8 @@ export const VideoGrid = styled.div`
         align-items: center;
         justify-content: center;
         justify-items: center;
-        width: 355px;
-        height: 220px;
+        width: 22.188rem;
+        height: 13.75rem;
         margin: 0 10px 20px 10px;
 
         svg {
@@ -96,8 +96,8 @@ export const VideoGrid = styled.div`
             grid-column: 1;
             grid-row: 1;
             filter: brightness(60%);
-            height: 200px;
-            width: 330px;
+            height: 12.5rem;
+            width: 20.625rem;
         }
 
         p {
@@ -105,7 +105,7 @@ export const VideoGrid = styled.div`
             align-self: flex-start;
             color: #fff;
             font-size: 1rem;
-            letter-spacing: 1px;
+            letter-spacing: 0.063rem;
             margin-top: 7px;
         }
 
@@ -157,10 +157,10 @@ export const Conteudo = styled.div`
     padding: 120px 110px;
 
 
-        h3{
+        h2{
             font-size: 2rem;
             font-family: 'Bebas neue';
-            letter-spacing: 3px;
+            letter-spacing: 0.188rem;
             margin-top: 25px;
             text-align: start;
             font-weight: 100;
@@ -176,7 +176,7 @@ export const Conteudo = styled.div`
         p{
             text-align: center;
             font-size: 1.2rem;
-            line-height: 30px;
+            line-height: 1.875rem;
             text-align: justify;
             padding-bottom: 25px;
         }
@@ -210,13 +210,13 @@ export const Conteudo = styled.div`
     padding: 10%;
 
 
-        h3{
+        h2{
             font-size: 2rem;
         }
 
         hr{
             background-color: black;
-            height: 3px;
+            height: 0.188rem;
             width: 50%;
             margin: 15px 0;
         }

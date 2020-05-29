@@ -23,7 +23,7 @@ export const Comparacao = styled.div`
         font-size: 3rem;
         font-weight: 100;
         font-family: Bebas neue;
-        letter-spacing: 3px;
+        letter-spacing: 0.188rem;
 
         @media(max-width: 689px){
             font-size: 2rem;
@@ -35,7 +35,7 @@ export const Comparacao = styled.div`
         font-size: 1.5rem;
         font-weight: 100;
         font-family: Bebas neue;
-        letter-spacing: 3px;
+        letter-spacing: 0.188rem;
         margin-bottom: 40px;
 
         @media(max-width: 689px){
@@ -72,7 +72,7 @@ export const Requisitos = styled.div`
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    height: 300px;
+    height: 18.75rem;
 
     div {
         display: flex;
@@ -122,8 +122,7 @@ export const Requisitos = styled.div`
             }
         }
 
-        button {
-            cursor: auto;
+        section {
             z-index: 2;
             display: flex;
             flex-direction: column;
@@ -136,8 +135,8 @@ export const Requisitos = styled.div`
             align-items: center;
             text-align: center;
 
-            width: 200px;
-            height: 130px;
+            width: 12.5rem;
+            height: 8.125rem;
             padding: 30px;
 
             border-radius: 5px;
@@ -153,8 +152,8 @@ export const Conteudo = styled.div`
     top: -10px;
     padding: 25px 18px 20px 15px;
 
-    height: 140px;
-    width: 200px;
+    height: 8.75rem;
+    width: 12.5rem;
 
     z-index: 1;
 
@@ -162,7 +161,7 @@ export const Conteudo = styled.div`
     border-radius: 5px;
 
     color: #111;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
     font-size: 1rem;
     text-align: center;
 `;
