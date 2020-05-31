@@ -2,25 +2,26 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: grid;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     padding: 130px 0;
     text-align: center;
 
     h1 {
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         font-size: 3rem;
         font-weight: 100;
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         letter-spacing: 0.188rem;
 
     }
 
     h2 {
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         font-size: 1.5rem;
         font-weight: 100;
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         letter-spacing: 0.063rem;
     }
 
@@ -52,7 +53,7 @@ export const Card = styled.div`
         h3 {
             font-size: 2rem;
             font-weight: 100;
-            font-family: Bebas neue;
+            font-family: 'Bebas Neue', cursive;
             letter-spacing: 1px;
             padding-bottom: 5px;
         }

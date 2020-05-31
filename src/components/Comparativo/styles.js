@@ -14,15 +14,11 @@ export const Comparacao = styled.div`
 
     justify-content: space-between;
 
-    @media(max-width: 909px){
-        padding: 0 10px;
-    }
-
     h2 {
         text-align: center;
         font-size: 3rem;
         font-weight: 100;
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         letter-spacing: 0.188rem;
 
         @media(max-width: 689px){
@@ -34,7 +30,7 @@ export const Comparacao = styled.div`
         text-align: center;
         font-size: 1.5rem;
         font-weight: 100;
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         letter-spacing: 0.188rem;
         margin-bottom: 40px;
 
@@ -72,7 +68,15 @@ export const Requisitos = styled.div`
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    height: 18.75rem;
+    min-height: 18.75rem;
+
+    @media (max-width: 867px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+    }
 
     div {
         display: flex;

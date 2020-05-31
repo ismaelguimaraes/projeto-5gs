@@ -12,7 +12,7 @@ export const Container = styled.div`
     }
 
     h1 {
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         font-weight: 100;
         letter-spacing: 0.125rem;
         font-size: 2.7rem;

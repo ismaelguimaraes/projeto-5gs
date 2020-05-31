@@ -7,7 +7,7 @@ import Comparativo from '../../components/Comparativo';
 
 export default function Main(){
 
-    return(
+    return (
         <>
             <Hero>
                 <h1>5G Sustentável</h1>
@@ -34,9 +34,8 @@ export default function Main(){
 
                 <p>O 5G representa uma oportunidade para repensar a organização da sociedade, a fim de apoiar abordagens sustentaveis para a vida.</p>
 
-                <Link to="/informacoes"></Link>
+                <Link to="/informacoes"> </Link>
             </Conteudo>
-
         </>
     );
 }

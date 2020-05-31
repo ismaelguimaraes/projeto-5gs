@@ -12,21 +12,31 @@ export const Hero = styled.div`
     flex-direction: column;
 
     background: #222 url(${hero}) right no-repeat;
-    background-size: contain;
+    background-size: 100vh;
 
     color: #fff;
-    padding-left: 105px;
 
     align-items: flex-start;
     justify-content: center;
 
     padding-top: 40px;
+    padding-left: 105px;
 
     width: 100vw;
     height: 100vh;
 
+    @media (max-width: 650px) {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    @media (max-width: 500px) {
+
+        padding-left: 0;
+    }
+
     h1 {
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         color: #10e660;
         text-transform: uppercase;
         letter-spacing: 0.25rem;
@@ -35,6 +45,18 @@ export const Hero = styled.div`
         text-align: start;
         width: 26.875rem;
         background: #222;
+
+        @media (max-width: 650px) {
+            text-align: center;
+            font-size: 3rem;
+            width: 80vw;
+        }
+
+        @media (max-width: 500px) {
+            text-align: center;
+            font-size: 3rem;
+            width: 80vw;
+        }
     }
 
     p {
@@ -43,6 +65,20 @@ export const Hero = styled.div`
         text-align: start;
         width: 26.875rem;
         background: #222;
+
+        @media (max-width: 650px) {
+            text-align: center;
+            width: 80vw;
+            font-size: 0.8rem;
+            height: 20px;
+        }
+
+        @media (max-width: 500px) {
+            text-align: center;
+            width: 80vw;
+            font-size: 0.8rem;
+            height: 30px;
+        }
     }
 `;
 
@@ -58,11 +94,15 @@ export const Video = styled.div`
     background-size: contain;
     color: #10e660;
 
+    @media (max-width: 500px) {
+        background: #222;
+    }
+
     h2 {
         text-align: center;
         font-size: 3rem;
         font-weight: 100;
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
         margin-bottom: 30px;
         background: #222;
@@ -75,6 +115,10 @@ export const VideoGrid = styled.div`
     justify-content: center;
     align-items: center;
     padding-top: 30px;
+
+    @media (max-width: 1040px) {
+        flex-direction: column;
+    }
 
     section {
         display: grid;
@@ -153,7 +197,6 @@ export const Conteudo = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 10%;
     padding: 120px 110px;
 
 

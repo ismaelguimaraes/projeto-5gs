@@ -1,6 +1,5 @@
 import React from 'react';
 import { IoIosMenu } from 'react-icons/io';
-import { FaLeaf} from 'react-icons/fa';
 
 import { Headers } from './styles';
 
@@ -12,10 +11,7 @@ export default function Header() {
         <>
         <Headers id="menu">
             <a href="/"><img src={logo} alt="5GS-Logotipo" height={35}/></a>
-            <div>
-                <IoIosMenu size={35}/>
-                <FaLeaf size={17} color="#4eb66a"/>
-            </div>
+            <IoIosMenu size={35}/>
         </Headers>
         </>
     );
