@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: grid;
-    width: 100vw;
+    max-width: 100vw;
     justify-content: center;
     align-items: center;
-    padding: 130px 0;
+    padding: 130px 50px;
     text-align: center;
 
     h1 {
@@ -33,11 +33,13 @@ export const Card = styled.div`
     align-items: center;
     background: #1eee70;
 
+
     div {
-        min-width: 9.375rem;
+        width: 9.375rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        grid-row: 1;
     }
 
     section {
@@ -49,6 +51,7 @@ export const Card = styled.div`
         grid-gap: 10px;
         background: #0DC954;
         box-shadow: inset 8px 0px 20px -20px black;
+        grid-row: 2;
 
         h3 {
             font-size: 2rem;
@@ -74,6 +77,49 @@ export const Card = styled.div`
                 &:hover {
                     text-decoration: underline #000;
                 }
+            }
+        }
+    }
+
+    @media(max-width: 575px) {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        word-wrap: break-word;
+
+        div {
+            height: 5rem;
+        }
+
+        section {
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                max-width: 30rem;
+                word-wrap: break-word;
+            }
+
+            span {
+                max-width: 20rem;
+                word-wrap: break-word;
+            }
+        }
+
+    }
+
+    @media(max-width: 398px) {
+
+        section {
+
+            p {
+                max-width: 16rem;
+            }
+
+            span {
+                max-width: 16rem;
             }
         }
     }

@@ -2,17 +2,19 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const Comparacao = styled.div`
-    background: #fff;
-    color: #333;
-    padding: 50px 0px;
-    max-width: 100vw;
-    box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
 
+    align-items: center;
     justify-content: space-between;
+
+    background: #fff;
+    color: #333;
+
+    padding: 50px 0px;
+
+    width: 100%;
+    box-sizing: border-box;
 
     h2 {
         text-align: center;
@@ -20,10 +22,6 @@ export const Comparacao = styled.div`
         font-weight: 100;
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 0.188rem;
-
-        @media(max-width: 689px){
-            font-size: 2rem;
-        }
     }
 
     h3 {
@@ -33,33 +31,34 @@ export const Comparacao = styled.div`
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 0.188rem;
         margin-bottom: 40px;
-
-        @media(max-width: 689px){
-            font-size: 2rem;
-        }
     }
 
     a {
         display: flex;
 
         padding: 10px 30px;
-        align-self: center;
 
-            margin-top: 40px;
+        justify-content: center;
+        align-items: center;
 
-            border-radius: 4px;
-            background-color: #333;
-            color: #fff;
+        margin-top: 40px;
 
-            &::after{
-                content: "Ler mais+";
-            }
+        border-radius: 4px;
+        background-color: #333;
+        color: #fff;
 
-            &:hover {
-                transition: background 0.2s ease-in-out;
-                background: ${darken(0.1, '#1eee70')};
-            }
+        max-height: 38px;
+
+        &::after{
+            content: "Ler mais+";
+            text-align: center;
         }
+
+        &:hover {
+            transition: background 0.2s ease-in-out;
+            background: ${darken(0.1, '#1eee70')};
+        }
+    }
 
 `;
 
@@ -71,11 +70,8 @@ export const Requisitos = styled.div`
     min-height: 18.75rem;
 
     @media (max-width: 867px) {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @media (max-width: 500px) {
-        grid-template-columns: 1fr;
+        overflow-x: scroll;
+        width: 95vw;
     }
 
     div {

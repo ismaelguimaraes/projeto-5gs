@@ -18,11 +18,15 @@ export default function Main(){
 
             <Video>
                 <h2>Vídeos</h2>
+
                 <VideoGrid>
-                    <section><article></article><AiFillPlayCircle size={65}/><p></p></section>
-                    <section><article></article><AiFillPlayCircle size={65} color="#fff"/><p></p></section>
-                    <section><article></article><AiFillPlayCircle size={65} color="#fff"/><p></p></section>
+                    <div>
+                        <a href="https://youtu.be/tqeC-cCIUTk" target="_blank" rel="noopener noreferrer"><article></article><AiFillPlayCircle size={65}/><p></p></a>
+                        <a href="https://youtu.be/hGoCbAw5IsM" target="_blank" rel="noopener noreferrer"><article></article><AiFillPlayCircle size={65} color="#fff"/><p></p></a>
+                        <a href="" target="_blank" rel="noopener noreferrer"><article></article><AiFillPlayCircle size={65} color="#fff"/><p></p></a>
+                    </div>
                 </VideoGrid>
+
             </Video>
 
             <Conteudo>

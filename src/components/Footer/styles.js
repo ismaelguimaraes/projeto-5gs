@@ -4,7 +4,7 @@ export const Footer = styled.footer`
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px;
+    padding: 10px 10px 10px 60px;
     background: #000;
     color: #fff;
     align-items: center;
@@ -17,6 +17,15 @@ export const Footer = styled.footer`
         &:hover {
             color: #0DC954;
         }
+    }
+
+    @media (max-width: 825px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 10px 10px 10px;
+        grid-gap: 30px;
+        align-items: center;
+        justify-content: center;
     }
 
 `;
@@ -40,6 +49,10 @@ export const Info = styled.div`
         &::after {
             content: "\\\\";
         }
+    }
+
+    @media (max-width: 825px) {
+        grid-row: 2;
     }
 `;
 

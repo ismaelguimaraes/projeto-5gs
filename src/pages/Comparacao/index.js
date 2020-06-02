@@ -21,8 +21,7 @@ export default function Comparacao() {
                         <p>Comparado à quarta geração da internet móvel, o 5G pode atingir uma velocidade cinquenta vezes maior. Velocidades mais rápidas abrem as portas para novas possibilidades nas redes celulares. Aplicativos com uso intensivo de dados nos terminais - como o download de arquivos com vários gigabytes e a transmissão de vídeo em 4K / 8K - podem se tornar realidade.</p>
 
                         <span>Fonte:
-                            <a href="https://www.techtudo.com.br/noticias/2018/06/o-que-e-5g-internet-deve-ficar-ate-50-vezes-mais-rapida-que-no-4g.ghtml" target="_blank" rel="noopener noreferrer"> https://www.techtudo.com.br/noticias/2018/06/o-que-e-5g-internet-deve-ficar-ate-50-vezes-mais-rapida-que-no-4g.ghtml
-                            </a>
+                            <a href="https://www.techtudo.com.br/noticias/2018/06/o-que-e-5g-internet-deve-ficar-ate-50-vezes-mais-rapida-que-no-4g.ghtml" target="_blank" rel="noopener noreferrer"> https://www.techtudo.com.br/noticias/2018/06/o-que-e-5g-internet-deve-ficar-ate-50-vezes-mais-rapida-que-no-4g.ghtml</a>
                         </span>
                     </section>
                 </Card>

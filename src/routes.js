@@ -4,16 +4,16 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Info from './pages/Info';
 import Comparacao from './pages/Comparacao'
-import Loading from './components/Loading'
+
+import Header from './components/Header';
 
 export default function Routes(){
     return(
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/informacoes" exact component={Info} />
-                <Route path="/comparacao" exact component={Comparacao} />
-                <Route path="/loading" exact component={Loading} />
+                <Route path="/" exact render={() => <> <Header/> <Home/> </>} />
+                <Route path="/informacoes" exact render={() => <> <Header/> <Info/> </>} />
+                <Route path="/comparacao" exact render={() => <> <Header/> <Comparacao/> </>} />
             </Switch>
         </BrowserRouter>
     );

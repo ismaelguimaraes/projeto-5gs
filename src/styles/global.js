@@ -14,14 +14,14 @@ export default createGlobalStyle `
   }
 
   body{
-      background: #fff;
+      background: #FAFAFA;
       -webkit-font-smoothing: antialiased !important;
   }
 
   body, input, button {
       color: #000;
       font-size: 14px;
-      font-family: Roboto, sans-serif;
+      font-family: 'Roboto', sans-serif;
   }
 
   button {
