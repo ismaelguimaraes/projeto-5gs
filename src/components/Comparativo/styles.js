@@ -42,7 +42,7 @@ export const Comparacao = styled.div`
         }
     }
 
-    a {
+    /* a {
         display: flex;
 
         padding: 10px 30px;
@@ -62,7 +62,7 @@ export const Comparacao = styled.div`
             transition: background 0.2s ease-in-out;
             background: ${darken(0.1, '#1eee70')};
         }
-    }
+    } */
 
 `;
 

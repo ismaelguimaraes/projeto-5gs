@@ -3,6 +3,8 @@ import { Comparacao, Requisitos, Conteudo} from './styles';
 import {FaTachometerAlt, FaStopwatch, FaMobileAlt, FaBatteryHalf} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+import Button from '../Buttons';
+
 export default function ComparativoGrande(){
     return (
         <Comparacao>
@@ -30,8 +32,9 @@ export default function ComparativoGrande(){
                     <Conteudo><p>As redes 5G devem consumir até 90% menos energia que as redes 4G atuais.</p></Conteudo>
                 </div>
             </Requisitos>
-
-            <Link to="/"></Link>
+            <div style={{textAlign: 'center'}}>
+                <Button to="/" value="Ler mais+" color="#FFFFFF" py="10" px="30" bgColor="#333333" bgHover="#0fca59" borderRadius="" />
+            </div>
         </Comparacao>
 
     );
