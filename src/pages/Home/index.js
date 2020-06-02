@@ -1,16 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {FaFacebook, FaCaretUp} from 'react-icons/fa';
-import { AiFillInstagram, AiFillTwitterCircle, AiFillPlayCircle } from 'react-icons/ai';
-import {Hero, Video, Conteudo, Footer, RedesSociais, Info, VideoGrid} from './styles';
+import { AiFillPlayCircle } from 'react-icons/ai';
+import {Hero, Video, Conteudo, VideoGrid} from './styles';
 
 import Comparativo from '../../components/Comparativo';
 
-import tumb from '../../assets/imagens/Tumbnail1.png'
-
 export default function Main(){
 
-    return(
+    return (
         <>
             <Hero>
                 <h1>5G Sustentável</h1>
@@ -22,16 +19,14 @@ export default function Main(){
             <Video>
                 <h2>Vídeos</h2>
                 <VideoGrid>
-                    <p><img src={tumb} alt=""/><AiFillPlayCircle size={66}/></p>
-                    <p><AiFillPlayCircle size={66} color="#fff"/></p>
-                    <p><AiFillPlayCircle size={66} color="#fff"/></p>
+                    <section><article></article><AiFillPlayCircle size={65}/><p></p></section>
+                    <section><article></article><AiFillPlayCircle size={65} color="#fff"/><p></p></section>
+                    <section><article></article><AiFillPlayCircle size={65} color="#fff"/><p></p></section>
                 </VideoGrid>
             </Video>
 
-
-
             <Conteudo>
-                <h3>A Tecnologia 5G e a sustentabilidade</h3>
+                <h2>A Tecnologia 5G e a sustentabilidade</h2>
                 <hr></hr>
                 <p>O 5G é a próxima geração de rede de dados sem fio e será capaz de fornecer 100 vezes mais velocidade de internet do que o 4G.  De fato, o 5G trará  novas formas de serviços, incluindo tudo, desde monitorar remotamente o uso da  agua nas fazendas até  realizar remotamente cirurgias cerebrais, Devido a sua baixíssima latência.</p>
 
@@ -39,27 +34,8 @@ export default function Main(){
 
                 <p>O 5G representa uma oportunidade para repensar a organização da sociedade, a fim de apoiar abordagens sustentaveis para a vida.</p>
 
-                <Link to="/"></Link>
+                <Link to="/informacoes"> </Link>
             </Conteudo>
-
-            <Footer>
-                <Info>
-                    <a href="#">Fale Conosco</a>
-                    <p>\</p>
-                    <a href="#">Sobre nós</a>
-                    <p>\</p>
-                    <a href="#">Legal</a>
-                </Info>
-
-                <a href=""><FaCaretUp size={25}/></a>
-
-                <RedesSociais>
-                    <a href="https:\\facebook.com"><FaFacebook size={25}/></a>
-                    <a href="instagram.com" ><AiFillInstagram size={27}/></a>
-                    <a href="instagram.com"><AiFillTwitterCircle size={27}/></a>
-                </RedesSociais>
-            </Footer>
-
         </>
     );
 }

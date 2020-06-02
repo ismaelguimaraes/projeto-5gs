@@ -2,63 +2,112 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 import bg2 from '../../assets/imagens/background2.png';
-import hero from '../../assets/imagens/backgroundDegrade.png';
+import hero from '../../assets/imagens/background.png';
+
+import thumb from '../../assets/imagens/thumbnail.png';
+import thumb2 from '../../assets/imagens/thumbnail2.png';
 
 export const Hero = styled.div`
     display: flex;
     flex-direction: column;
 
     background: #222 url(${hero}) right no-repeat;
-    background-size: contain;
+    background-size: 100vh;
 
     color: #fff;
-    padding-left: 105px;
 
     align-items: flex-start;
     justify-content: center;
 
     padding-top: 40px;
+    padding-left: 105px;
 
     width: 100vw;
     height: 100vh;
 
+    @media (max-width: 650px) {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    @media (max-width: 500px) {
+
+        padding-left: 0;
+    }
 
     h1 {
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         color: #10e660;
         text-transform: uppercase;
-        letter-spacing: 4px;
+        letter-spacing: 0.25rem;
         font-weight: 300;
         font-size: 4.5rem;
         text-align: start;
+        width: 26.875rem;
+        background: #222;
+
+        @media (max-width: 650px) {
+            text-align: center;
+            font-size: 3rem;
+            width: 80vw;
+        }
+
+        @media (max-width: 500px) {
+            text-align: center;
+            font-size: 3rem;
+            width: 80vw;
+        }
     }
 
     p {
         font-size: 1.25rem;
-        letter-spacing: 1.5px;
+        letter-spacing: 0.094rem;
         text-align: start;
-        width: 480px;
+        width: 26.875rem;
+        background: #222;
+
+        @media (max-width: 650px) {
+            text-align: center;
+            width: 80vw;
+            font-size: 0.8rem;
+            height: 20px;
+        }
+
+        @media (max-width: 500px) {
+            text-align: center;
+            width: 80vw;
+            font-size: 0.8rem;
+            height: 30px;
+        }
     }
 `;
 
 export const Video = styled.div`
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 90vh;
+    min-height: 90vh;
+    align-items: center;
 
-    padding: 50px 150px;
+    padding: 50px 0px;
     background: #222 url(${bg2}) left no-repeat;
     background-size: contain;
     color: #10e660;
+
+    @media (max-width: 500px) {
+        background: #222;
+    }
 
     h2 {
         text-align: center;
         font-size: 3rem;
         font-weight: 100;
-        font-family: Bebas neue;
+        font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
         margin-bottom: 30px;
+        background: #222;
+        padding: 10px 20px;
     }
-
 `;
 
 export const VideoGrid = styled.div`
@@ -67,16 +116,18 @@ export const VideoGrid = styled.div`
     align-items: center;
     padding-top: 30px;
 
-    p {
+    @media (max-width: 1040px) {
+        flex-direction: column;
+    }
+
+    section {
         display: grid;
         align-items: center;
         justify-content: center;
         justify-items: center;
-        width: 300px;
-        height: 200px;
-        overflow: hidden;
-
-        background: #333;
+        width: 22.188rem;
+        height: 13.75rem;
+        margin: 0 10px 20px 10px;
 
         svg {
             grid-column: 1;
@@ -85,15 +136,59 @@ export const VideoGrid = styled.div`
             color: #fff;
         }
 
-        img {
+        article {
             grid-column: 1;
             grid-row: 1;
             filter: brightness(60%);
-
-            min-width: 355px;
+            height: 12.5rem;
+            width: 20.625rem;
         }
 
-        margin: 10px;
+        p {
+            justify-self: self-start;
+            align-self: flex-start;
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: 0.063rem;
+            margin-top: 7px;
+        }
+
+        &:nth-child(1) {
+            article {
+                background: url(${thumb}) center no-repeat;
+                background-size: contain;
+            }
+
+            p {
+                &::after {
+                    content: "5GS - Sustentabilidade";
+                }
+            }
+        }
+        &:nth-child(2) {
+            article {
+                background: url(${thumb2}) center no-repeat;
+                background-size: contain;
+            }
+
+            p {
+                &::after {
+                    content: "5GS - O que fizemos até agora";
+                }
+            }
+        }
+        &:nth-child(3) {
+            article {
+                background: url(${thumb}) center no-repeat;
+                background-size: contain;
+            }
+
+            p {
+                &::after {
+                    content: "5GS - Sem nome";
+                }
+            }
+        }
     }
 `;
 
@@ -102,14 +197,13 @@ export const Conteudo = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 10%;
     padding: 120px 110px;
 
 
-        h3{
+        h2{
             font-size: 2rem;
             font-family: 'Bebas neue';
-            letter-spacing: 3px;
+            letter-spacing: 0.188rem;
             margin-top: 25px;
             text-align: start;
             font-weight: 100;
@@ -123,10 +217,9 @@ export const Conteudo = styled.div`
         }
 
         p{
-
             text-align: center;
             font-size: 1.2rem;
-            line-height: 30px;
+            line-height: 1.875rem;
             text-align: justify;
             padding-bottom: 25px;
         }
@@ -160,13 +253,13 @@ export const Conteudo = styled.div`
     padding: 10%;
 
 
-        h3{
+        h2{
             font-size: 2rem;
         }
 
         hr{
             background-color: black;
-            height: 3px;
+            height: 0.188rem;
             width: 50%;
             margin: 15px 0;
         }
@@ -175,67 +268,6 @@ export const Conteudo = styled.div`
             font-size: 1rem;
         }
 }
-`;
-
-export const Footer = styled.footer`
-    color: #fff;
-    top: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background: #000;
-    padding: 12px 8%;
-    align-items: center;
-    justify-content: space-between;
-
-    svg {
-            &:hover {
-            color: #97FF83;
-            }
-        }
-
-    p {
-        padding: 0 10px;
-        font-size: 0.8rem;
-    }
-
-    a {
-        color: #fff;
-        justify-self: center;
-        font-family: 'Gilroy', sans-serif;
-
-        font-size: 0.8rem;
-        text-align: center;
-
-        cursor: pointer;
-
-        &:first-child{
-            padding-left: 10px;
-        }
-
-        transition: background cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
-
-        &:hover {
-            color: #97FF83;
-        }
-    }
-
-    svg {
-        color: #fff;
-    }
-`;
-
-export const Info = styled.div`
-    display: flex;
-    justify-items: center;
-    align-items: center;
-`;
-
-export const RedesSociais = styled.div`
-    justify-self: end;
-
-    a {
-        padding: 0 7px;
-    }
 `;
 
 

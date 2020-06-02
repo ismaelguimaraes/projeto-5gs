@@ -4,25 +4,22 @@ import { darken } from 'polished';
 export const Comparacao = styled.div`
     background: #fff;
     color: #333;
-    padding: 50px 220px;
+    padding: 50px 0px;
     max-width: 100vw;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     justify-content: space-between;
-
-    @media(max-width: 909px){
-        padding: 0 10px;
-    }
 
     h2 {
         text-align: center;
         font-size: 3rem;
         font-weight: 100;
-        font-family: Bebas neue;
-        letter-spacing: 3px;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 0.188rem;
 
         @media(max-width: 689px){
             font-size: 2rem;
@@ -33,8 +30,8 @@ export const Comparacao = styled.div`
         text-align: center;
         font-size: 1.5rem;
         font-weight: 100;
-        font-family: Bebas neue;
-        letter-spacing: 3px;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 0.188rem;
         margin-bottom: 40px;
 
         @media(max-width: 689px){
@@ -48,22 +45,22 @@ export const Comparacao = styled.div`
         padding: 10px 30px;
         align-self: center;
 
-        margin-top: 40px;
+            margin-top: 40px;
 
-        border-radius: 4px;
-        background-color: #333;
-        color: #fff;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
 
-        &::after{
-            content: "Ler mais+";
-        }
+            &::after{
+                content: "Ler mais+";
+            }
 
-        &:hover {
-            transition: background 0.2s ease-in-out;
-            background: ${darken(0.1, '#1eee70')};
+            &:hover {
+                transition: background 0.2s ease-in-out;
+                background: ${darken(0.1, '#1eee70')};
+            }
         }
     } */
-
 `;
 
 export const Requisitos = styled.div`
@@ -71,7 +68,15 @@ export const Requisitos = styled.div`
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    height: 300px;
+    min-height: 18.75rem;
+
+    @media (max-width: 867px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+    }
 
     div {
         display: flex;
@@ -121,13 +126,12 @@ export const Requisitos = styled.div`
             }
         }
 
-        button {
-            cursor: auto;
+        section {
             z-index: 2;
             display: flex;
             flex-direction: column;
             text-transform: uppercase;
-            background: #1eee70;
+            background: #10E660;
             color: #000;
             font-size: 1rem;
 
@@ -135,8 +139,8 @@ export const Requisitos = styled.div`
             align-items: center;
             text-align: center;
 
-            width: 200px;
-            height: 130px;
+            width: 12.5rem;
+            height: 8.125rem;
             padding: 30px;
 
             border-radius: 5px;
@@ -152,16 +156,16 @@ export const Conteudo = styled.div`
     top: -10px;
     padding: 25px 18px 20px 15px;
 
-    height: 140px;
-    width: 200px;
+    height: 8.75rem;
+    width: 12.5rem;
 
     z-index: 1;
 
-    background: #2bbe60;
+    background: #10B74E;
     border-radius: 5px;
 
     color: #111;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
     font-size: 1rem;
     text-align: center;
 `;
